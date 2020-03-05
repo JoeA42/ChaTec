@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="204.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.MainController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER" />
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="204.0" prefWidth="351.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER" layoutX="155.0" layoutY="177.0" style="&#10;" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Label>
+            <Line endX="-100.0" endY="138.0" layoutX="296.0" layoutY="51.0" startX="-100.0" startY="-36.0" stroke="#5c8046" />
+            <TextField fx:id="userID" layoutX="23.0" layoutY="103.0" onAction="#enterKey" promptText="username" />
+            <Text layoutX="46.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the username" />
+            <Button fx:id="openChatButton" layoutX="62.0" layoutY="152.0" mnemonicParsing="false" onAction="#openChat" text="Open chat" />
+            <ToggleButton fx:id="startServerButton" layoutX="229.0" layoutY="60.0" mnemonicParsing="false" onAction="#startServer" prefHeight="85.0" prefWidth="76.0" text="Start server" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="413.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.ClientController">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="lel" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="388.0" prefWidth="545.0" VBox.vgrow="ALWAYS">
+      <children>
+            <TextField fx:id="textInputClient" layoutX="14.0" layoutY="335.0" onAction="#onEnter" prefHeight="33.0" prefWidth="487.0" promptText="enter text here" />
+            <Button fx:id="sendButton" layoutX="506.0" layoutY="335.0" mnemonicParsing="false" onAction="#sendButton" prefHeight="33.0" prefWidth="120.0" text="Send" />
+            <TextArea fx:id="chatWindowClient" editable="false" layoutX="14.0" layoutY="14.0" opacity="0.7" prefHeight="306.0" prefWidth="487.0" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
